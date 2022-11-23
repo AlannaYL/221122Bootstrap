@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/bootstrap.css">
+  <title>Document</title>
+  <style>
+    .row {
+      background: var(--bs-gray-300);
+      margin-bottom: .5rem;
+    }
+
+    .row>*:nth-child(1) {
+      background: #D97E9F;
+    }
+
+    .row>*:nth-child(2) {
+      background: #D9D0D4;
+    }
+
+    .row>*:nth-child(3) {
+      background: #BDBF6F;
+    }
+
+    .row>*:nth-child(4) {
+      background: #8C876D;
+    }
+
+    .row>*:nth-child(5) {
+      background: #403D3C;
+    }
+
+    h3 {
+      margin: 1.5rem 0;
+    }
+
+    h4 {
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>欄</h1>
+    <p>.row 是彈性盒子，.col 欄位是彈性項目，可使用 BS 提供的彈性盒屬性相關 class 對齊</p>
+
+    <h2>垂直對齊</h2>
+    <div class="row align-items-start">
+      <div class="col">&nbsp;</div>
+      <div class="col">&nbsp;</div>
+      <div class="col">&nbsp;</div>
+    </div>
+
+
+    <h2>水平對齊</h2>
+    <p>1.justify-content-start</p>
+    <div class="row justify-content-start">
+      <div class="col-4">col</div>
+      <div class="col-4">col</div>
+    </div>
+
+    <p>2.justify-content-center</p>
+    <div class="row justify-content-center">
+      <div class="col-4">col</div>
+      <div class="col-4">col</div>
+    </div>
+
+    <p>3.justify-content-end</p>
+    <div class="row justify-content-end">
+      <div class="col-4">col</div>
+      <div class="col-4">col</div>
+    </div>
+
+    <p>4.justify-content-around</p>
+    <div class="row justify-content-around">
+      <div class="col-4">col</div>
+      <div class="col-4">col</div>
+    </div>
+
+    <p>5.justify-content-between</p>
+    <div class="row justify-content-between">
+      <div class="col-4">col</div>
+      <div class="col-4">col</div>
+    </div>
+
+    <p>6.justify-content-evenly</p>
+    <div class="row justify-content-evenly">
+      <div class="col-4">col</div>
+      <div class="col-4">col</div>
+    </div>
+
+    <p>7.justify-content-lg-between</p>
+    <div class="row justify-content-start justify-content-lg-between">
+      <div class="col-4">col</div>
+      <div class="col-4">col</div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <h2>第一組</h2>
+    <div class="row">
+      <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+      <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+
+      <div class="w-100"></div>
+
+      <div class="col-6 col-sm-3">.col-6 .col-sm-4</div>
+      <div class="col-6 col-sm-3">.col-6 .col-sm-4</div>
+    </div>
+  </div>
+
+  <div class="container text-center">
+    <h2>第一組</h2>
+
+    <div class="row">
+      <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+      <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+
+      <!-- Force next columns to break to new line at md breakpoint and up -->
+      <div class="w-100 d-none d-md-block"></div>
+
+      <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+      <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>使用 margin 調整空間</h2>
+    <div class="row">
+      <div class="col-auto">col</div>
+      <div class="col-auto ms-auto">ms-auto col</div>
+    </div>
+    <div class="row">
+      <div class="col-auto me-auto">me-auto col</div>
+      <div class="col-auto">col</div>
+    </div>
+  </div>
+
+  <!-- 
+    左邊開始的語系(大部分)
+    margin-left => ms
+    margin-right => me
+
+        左邊開始的語系(例如阿語系)
+    margin-left => ms
+    margin-right => me
+  -->
+  <div class="container">
+
+    <div class="clearfix">
+      <img src="https://picsum.photos/200/100/?random=1" style="width: 400px;"
+        class="col-md-6 float-md-end mb-3 ms-md-3">
+
+      <p>
+        A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite
+        a
+        few meaningless phrases here to demonstrate how the columns interact here with the floated image.
+      </p>
+
+      <p>
+        As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with
+        some
+        actual content in here, rather than just this boring placeholder text that goes on and on, but actually
+        conveys
+        no
+        tangible information at. It simply takes up space and should not really be read.lorem Lorem, ipsum dolor sit
+        amet consectetur adipisicing elit. Earum quae voluptatum libero aliquam praesentium excepturi blanditiis dolor!
+        Cum ea dolore, nesciunt fugiat nostrum non, eum voluptatibus fuga fugit illo voluptates culpa numquam, quisquam
+        modi quos temporibus quasi? Nemo ipsa provident, natus autem illum architecto harum magnam, neque at recusandae
+        doloremque alias quod repellat cumque expedita dolores? Deleniti corporis error, aliquam omnis voluptatibus
+        voluptatum, reiciendis incidunt porro, assumenda numquam facilis a! Quam voluptatum pariatur aperiam rem nihil
+        tempore vero ipsam quia est recusandae unde labore harum cum sequi omnis hic delectus laborum quae aliquid odio
+        fugit, cupiditate rerum totam. Cupiditate quos illum quia nulla error, veritatis nihil? Ad, vitae, laudantium
+        veritatis est veniam aut iste asperiores sit harum sed repudiandae quis explicabo debitis soluta, impedit vel
+        quo assumenda natus! Dolor blanditiis provident, asperiores error est animi quam accusamus id dignissimos nisi
+        sequi temporibus vel! Unde dolorum aut illum eligendi ratione, sit beatae repellat ut, veniam omnis, odio
+
+      </p>
+    </div>
+  </div>
+  <script src="./JS/bootstrap.bundle.js"></script>
+</body>
+
+</html>
